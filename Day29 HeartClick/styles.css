@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
+}
+h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+small{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.fa-heart{
+    color: red;
+}
+.love{
+    height: 440px;
+    width: 300px;
+    background: url('image13.png') no-repeat center center/cover ;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+}
+.love .fa-heart{
+    position: absolute;
+    animation: grow 0.6s linear;
+    transition: transform 0.6s ease;
+    transform: translate(-50%, -50%) scale(0.98);
+}
+@keyframes grow{
+    from{
+        transform: translate(-50%, -50%) scale(0.98);
+        opacity: 0;
+    }
+    to{
+        transform: translate(-50%, -50%) scale(0.1);
+        opacity: 0;
+    }
+}
